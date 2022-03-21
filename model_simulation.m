@@ -6,7 +6,7 @@
 
 % Author: Lukas Eigentler (leigentler001@dundee.ac.uk)
 % License: GNU GPL
-% Last updated: 19/10/2021
+% Last updated: 18/02/2022
 
 clear; 
 close all;
@@ -19,6 +19,7 @@ n=6; % number of iterations for generation of fractal surface
 H=0.5; % Hurst exponent, fractal dimension D = 3-H
 param_setting = 1; % 1: fractal like structure with zero contour as separator between good and bad patches ("case (iii)"); 2: fractal like structure with continuous parameter landscape ("case (iv)") 3: exact chequerboard ("case (i)"); 4: same grid as exact chequerboard but randomly assigned good and bad patches ("case (ii)") 
 tlist = linspace(0,5,10); % vector defining time outputs to be saved
+time_start = tic;
 %% create parameter landscape and plot
 
 f9 = figure(9);
